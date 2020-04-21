@@ -44,7 +44,7 @@ class Instagram_Meta_Unfollow  :
         while scheight < x:
             try:
                 time.sleep(random.randint(Time_A,Time_B))
-                driver.find_element_by_xpath('.//*[@href="/only.fire.god/following/"]').click()            
+                driver.find_element_by_xpath('.//*[@href="/'+username+'/following/"]').click()            
                 time.sleep(random.randint(Time_A,Time_B))                      
                 driver.find_element_by_xpath('/html/body/div[4]/div/div[2]/ul/div/li[3]/div/div[2]/div[1]/div/div/a').click()                
                 print(driver.current_url)                    
