@@ -58,8 +58,8 @@ class Instagram_Meta_Unfollow  :
                  time.sleep(3)
             
 ###################     
-#x= .10 or.999
-x=.50
+#x= .10 or.045
+x=.035
 ###################     
 #time
 #smailtime Time_A <Time_B
@@ -79,6 +79,7 @@ while True:
         ig.unfollow_Meta(unf)                
     except Exception:
         ig.CloseBrowrse()
-        time.sleep(20)
+        #stand by 100 min
+        time.sleep(6000)
         ig = Instagram_Meta_Unfollow(username,password)
         ig.login()
